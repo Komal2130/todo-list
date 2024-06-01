@@ -1,33 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-input[type="text"] {
-  margin: 10px;
-  padding: 5px;
-  font-size: 16px;
+h1 {
+  color: #A91D3A;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-button {
-  margin: 5px;
-  padding: 5px;
+.TodoWrapper {
+  background: #151515;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-li {
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #EEEEEE;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 250px;
+  color: #EEEEEE;
+}
+
+.todo-input::placeholder {
+  color: #EEEEEE;
+}
+
+.todo-btn {
+  background: #A91D3A;
+  color: #EEEEEE;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.Todo {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 5px 0;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  align-items: center;
+  background: #151515;
+  color: #EEEEEE;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-li input[type="checkbox"] {
-  margin-right: 10px;
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #EEEEEE;
+  cursor: pointer;
+}
+
+.completed {
+  color: #EEEEEE;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.dropdown {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.dropdown select {
+  background: #A91D3A;
+  color: #EEEEEE;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown select:focus {
+  outline: none;
 }
